@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">オハヨーボタン</string>
+    <string name="consumer_key">jm1EE1HrHWTVE04VwAAu5A</string>
+    <string name="consumer_secret">jyHjfhjeLZBrYvhdCf6qOYFJ4Rtk4kXkB87juX6QPkM</string>
+    <string name="preference_key_token">token</string>
+    <string name="preference_key_token_secret">token_secret</string>
+    <string name="default_message">おはよー \n#オハヨーボタン</string>
+    <string name="message_success">ツイートしました</string>
+    <string name="message_error">ツイートできませんでした</string>
+</resources>

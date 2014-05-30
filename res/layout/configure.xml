@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical">
+    <ImageView android:layout_width="wrap_content" android:id="@+id/imageView1" android:src="@drawable/setting_logo" android:layout_height="wrap_content"></ImageView>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:background="@drawable/setting_background" android:orientation="vertical" android:layout_height="match_parent">
+        <EditText android:id="@+id/message_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/default_message"></EditText>
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+            <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/button_red" android:id="@+id/create_button1" android:onClick="onCreateButton1Clicked"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/button_yellow" android:id="@+id/create_button2" android:onClick="onCreateButton2Clicked"></ImageView>
+            <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/button_green" android:id="@+id/create_button3" android:onClick="onCreateButton3Clicked"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

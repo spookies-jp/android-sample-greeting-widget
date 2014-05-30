@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="jp.co.spookies.android.greetingwidget" 
+	android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="8" />
+	<application android:icon="@drawable/icon" 
+		android:label="@string/app_name">
+		<receiver android:name="GreetingWidgetProvider"
+			android:label="GreetingWidget">
+			<intent-filter>
+				<action 
+				android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/greetingwidget" />
+		</receiver>
+		<activity android:name=".GreetingWidgetConfigureActivity">
+			<intent-filter>
+				<action 
+				android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+			</intent-filter>
+		</activity>
+		<activity android:name="LoginActivity" 
+					android:launchMode="singleTask">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="greetingwidget" 
+					android:host="callback" />
+			</intent-filter>
+		</activity>
+		<service android:name="TweetService">
+		</service>
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest>
